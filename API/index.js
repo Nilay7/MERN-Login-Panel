@@ -11,7 +11,7 @@ connectDB();
 
 app.use(cors());
 
-app.use(express.json());
+app.use(express.json({ type: 'application/json' }));
 
 require('./routes')(app);
 
