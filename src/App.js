@@ -3,16 +3,16 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Dashboard from './components/Dashboard/Dashboard.jsx';
 import Login from './components/Login/Login';
-import useToken from './hooks/useToken';
+import Register from './components/Register/Register';
 
 function App() {
-  const { token, setToken } = useToken();
+  // const { token, setToken } = useToken();
 
-  console.log('token',token)
+  // console.log('token',token)
 
-  if(!token) {
-    return <Login setToken={setToken} />
-  }
+  // if(!token) {
+  //   return <Login setToken={setToken} />
+  // }
 
   return (
     <div className="wrapper">
@@ -21,6 +21,12 @@ function App() {
         <Switch>
           <Route path='/dashboard'>
             <Dashboard />
+          </Route>
+          <Route path='/register'>
+            <Register />
+          </Route>
+          <Route path='/login'>
+            <Login />
           </Route>
         </Switch>
       </Router>
