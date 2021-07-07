@@ -4,6 +4,7 @@ import './App.css';
 import Dashboard from './components/Dashboard/Dashboard.jsx';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   // const { token, setToken } = useToken();
@@ -16,7 +17,7 @@ function App() {
 
   return (
     <div className="wrapper">
-      <h1>Landing Page</h1>
+      <Navbar />
       <Router>
         <Switch>
           <Route path='/dashboard'>

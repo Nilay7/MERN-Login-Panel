@@ -2,16 +2,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 5px solid rgb(73, 73, 192);
+    border: 5px solid rgb(103, 103, 199);
     border-radius: 1em;
     padding-left: 0em;
     padding-right: 0em;
-    margin: 10em 15em;
+    margin: 10em 2em;
+    background: rgb(164, 188, 202);
+}
+
+p {
+    margin-bottom: 0.8em;
 }
 
 
+input {
+    border-radius: 12px;
+    width: 100%;
+    align-items: center;
+    font-size: 1.2em;
+}
+
 .submitbtn {
-    padding: 1em 2.4em;
+    padding: 1em 4em;
+    margin-top: 1.5em;   
 }
 
 button {
@@ -19,9 +32,23 @@ button {
     border: 0px;
     border-radius: 3em;
     color: white;
-    padding: 0.5em 1em;
+    padding: 0.5em 3em;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+    .login-wrapper {
+        margin: 10em 12em 0em;
+        padding: 2em 1em;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .login-wrapper {
+        margin: 10em 22em 0em;
+        padding: 2em 1em;
+    }
 }
