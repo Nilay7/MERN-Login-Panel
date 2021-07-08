@@ -1,0 +1,48 @@
+
+.container {
+    margin: 0;
+    display: flex;
+    align-items: left;
+}
+
+.logo {
+    font-size: 1.5em;
+    padding-top: 0.5em;
+    padding-left: 0.8em;
+    font-weight: bold;
+}
+
+span {
+    color: cornflowerblue;
+}
+
+nav {
+  background: rgb(43, 43, 43); 
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: 100%; 
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    position: unset;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    place-content: space-between;
+    padding: 0em 1em;
+}
+
+@media only screen and (min-width: 768px) {
+    nav a {
+        padding: 0em 0.5em;
+    }
+}

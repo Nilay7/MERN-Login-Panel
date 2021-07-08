@@ -14,13 +14,7 @@ exports.register = (req, res) => {
             lastname: body.lastname,
             phonenumber: body.phonenumber
         })
-        .then((err, data) => {
-            if (err) {
-                return res.status(400).send({
-                    status: 'Error',
-                    message: `Error: ${err}`
-                });
-            }
+        .then((data) => {
             return res.status(200).send({
                 status: 'Success',
                 message: "User Registered Successfully!",
